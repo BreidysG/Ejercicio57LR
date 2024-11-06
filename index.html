@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigue el Camino - Ejercicio de Lectura Veloz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+    <h1>Sigue el Camino</h1>
+    <p id="instructions">Sigue los puntos que aparecen en la pantalla. Tu objetivo es no perder el camino.</p>
+
+    <div id="speed-selection">
+        <label for="speed">Velocidad (en milisegundos):</label>
+        <input type="number" id="speed" value="200" min="1" step="1" />
+        <span>ms</span>
+    </div>
+
+    <div id="timer" class="hidden">Tiempo restante: 3:00</div>
+    <div id="game-area">
+        <div id="path" class="path"></div>
+    </div>
+    
+    <div>
+        <button id="startBtn">Iniciar Ejercicio</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
